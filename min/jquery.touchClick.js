@@ -1,0 +1,2 @@
+/* jQuery TouchClick. MIT License. https://github.com/easy-designs/jquery.touchClick.js */
+jQuery.fn.touchClick=function(a){return $(this).on("touchstart click",function(b){b.stopPropagation();b.preventDefault();if(b.handled!==true){a(event);b.handled=true}else{return false}})};
